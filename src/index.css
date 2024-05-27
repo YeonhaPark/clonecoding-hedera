@@ -41,4 +41,28 @@
     letter-spacing: 1.2px;
     line-height: 1;
   }
+
+  .header-quickstart {
+    margin: auto 1vw;
+    min-width: auto;
+  }
+
+  .header-search {
+    margin: auto calc(6.25% - 43.1px) auto 1vw;
+  }
+
+  input[type="search"] {
+    @apply text-white border border-white outline-none rounded-[15px] h-[30px] w-[120px] bg-transparent;
+    min-width: auto;
+    padding: 1px 38px 1px 9px;
+    font-weight: 500;
+    font-size: 8px;
+    letter-spacing: 1.33px;
+    line-height: 28px;
+    text-transform: uppercase;
+  }
+
+  input[type="search"]::placeholder {
+    @apply text-white;
+  }
 }
