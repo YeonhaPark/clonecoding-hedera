@@ -30,6 +30,10 @@
 }
 
 @layer components {
+  .nav-style {
+    @apply flex justify-end items-start basis-auto flex-grow-0;
+  }
+
   .nav-element {
     @apply whitespace-nowrap font-normal text-gray-100 opacity-80;
     font-size: 13px;
