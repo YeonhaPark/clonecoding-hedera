@@ -28,3 +28,13 @@
   src: url("/fonts/StyreneAWeb-Bold.woff2") format("woff2");
   font-weight: 700;
 }
+
+@layer components {
+  .nav-element {
+    @apply whitespace-nowrap font-normal text-gray-100 opacity-80;
+    font-size: 13px;
+    padding: 20px 2vw 36px;
+    letter-spacing: 1.2px;
+    line-height: 1;
+  }
+}
