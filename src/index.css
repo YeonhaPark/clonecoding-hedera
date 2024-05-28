@@ -154,11 +154,9 @@ img {
     height: 5vw;
     max-height: 62px;
   }
-  .digits-section {
-    @apply relative mt-[-75px] py-[12.5%] px-[20px] xl:pt-0 xl:px-[6.25%] xl:pb-[6.25%];
-  }
+
   .digits-container {
-    @apply flex bg-white rounded-tr-[160px] rounded-bl-[160px] py-[100px] px-[5vw] justify-between;
+    @apply flex bg-white;
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.1);
   }
 
@@ -205,4 +203,14 @@ img {
     letter-spacing: -2px;
     line-height: 60px;
   }
+
+  .partner-col-fixed {
+    @apply fixed;
+    top: 159.672px;
+    left: 75.8125px;
+  }
+  /* .partner-col-banner {
+    transform: translate(0px, 1690px);
+    position: absolute;
+  } */
 }

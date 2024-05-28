@@ -1,3 +1,4 @@
+import Banner from "../atoms/Banner";
 import DigitItem from "../atoms/DigitItem";
 const digits = [
   { digits: "5,679,285", description: "MAINNET\nACCOUNTS CREATED" },
@@ -7,8 +8,8 @@ const digits = [
 ];
 export default function DigitsSection() {
   return (
-    <section className="digits-section">
-      <div className="digits-container">
+    <section>
+      <Banner classNames={["digits-container", "justify-between"]}>
         {digits.map((el) => (
           <DigitItem
             key={el.description}
@@ -16,7 +17,7 @@ export default function DigitsSection() {
             description={el.description}
           />
         ))}
-      </div>
+      </Banner>
     </section>
   );
 }
