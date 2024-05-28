@@ -160,6 +160,12 @@ img {
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.1);
   }
 
+  .eqty-container {
+    @apply border-transparent border-[6px];
+    background: linear-gradient(#222222, #222222) padding-box,
+      linear-gradient(to right, #5281e7, #765aea) border-box;
+  }
+
   .digits-item-desc {
     @apply leading-[19px];
   }
