@@ -114,7 +114,11 @@ img {
   }
 
   .gradient-bg {
-    @apply relative bg-gray-900 overflow-hidden min-h-[600px]  after:block after:absolute after:bg-fixed after:inset-0 after:bg-noise after:bg-repeat;
+    @apply absolute after:block after:absolute after:bg-fixed after:inset-0 after:bg-noise after:bg-repeat;
+  }
+
+  .hero {
+    @apply relative bg-gray-900 overflow-hidden min-h-[600px];
     clip-path: inset(0 0 0 0);
   }
 
@@ -127,7 +131,8 @@ img {
     padding: 208px 6.25%;
   }
   .hero-text > h1 {
-    font-size: 5.75vw;
+    font-size: 83px;
+    height: 441px;
     line-height: 6.4vw;
     min-height: 400px;
     padding-top: 54px;
