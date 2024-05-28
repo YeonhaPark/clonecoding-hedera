@@ -113,8 +113,8 @@ img {
     @apply text-white;
   }
 
-  .hero {
-    @apply relative -z-10 bg-gray-900 overflow-hidden  min-h-[600px]  after:block after:absolute after:bg-fixed after:inset-0 after:bg-noise after:bg-repeat;
+  .gradient-bg {
+    @apply relative bg-gray-900 overflow-hidden min-h-[600px]  after:block after:absolute after:bg-fixed after:inset-0 after:bg-noise after:bg-repeat;
     clip-path: inset(0 0 0 0);
   }
 

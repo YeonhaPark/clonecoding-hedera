@@ -1,6 +1,6 @@
 export default function GradientBackground() {
   return (
-    <div>
+    <div className="gradient-bg">
       <div className="flex justify-center items-center absolute inset-0">
         <img
           className="animate-rotate"
