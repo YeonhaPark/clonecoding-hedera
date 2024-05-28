@@ -1,13 +1,12 @@
-import HeroSection from "./components/pages/HeroSection";
+import DigitSection from "./components/organisms/DigitsSection";
+import HeroSection from "./components/organisms/HeroSection";
 import Layout from "./components/templates/Layout";
 
 export default function App() {
   return (
     <Layout>
       <HeroSection />
-      <section className="min-h-[900px]">
-        s<button>sdf</button>s
-      </section>
+      <DigitSection />
     </Layout>
   );
 }

@@ -149,4 +149,16 @@ img {
     height: 5vw;
     max-height: 62px;
   }
+
+  .digits-section {
+    @apply relative mt-[-75px] py-0 px-[6.25%];
+  }
+  .digits-container {
+    @apply flex bg-white rounded-tr-[160px] rounded-bl-[160px] py-[100px] px-[5vw] justify-between;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .digits-item-desc {
+    @apply leading-[19px];
+  }
 }
