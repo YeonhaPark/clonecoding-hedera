@@ -33,6 +33,50 @@ img {
 }
 
 @layer components {
+  .common-btn {
+    @apply h-[30px]  rounded-[15px] text-xs leading-7 px-[30px] uppercase relative z-20;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    /* transition: background-color 0.1s ease-out; */
+  }
+  .btn-primary {
+    @apply common-btn bg-gradient-160 from-green-700 to-green-600 text-white;
+    min-width: 160px;
+  }
+
+  .btn-primary-reverse {
+    @apply common-btn bg-gradient-160 from-green-600 to-green-700 border border-transparent;
+  }
+
+  .btn-primary-reverse:before {
+    @apply bg-gradient-160 from-green-700 to-green-600 opacity-0 absolute;
+    content: "";
+    border-radius: 15px;
+    top: -1px;
+    left: -1px;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    z-index: -1;
+    transition: opacity 1s;
+  }
+
+  .btn-primary-reverse:hover::before {
+    opacity: 1;
+  }
+
+  .btn-white {
+    @apply common-btn text-gray-800 bg-white border border-white;
+  }
+
+  .btn-white:hover {
+    @apply common-btn text-gray-800 bg-gray-100 border border-gray-100;
+    box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 0.5);
+  }
+
+  .btn-secondary {
+    @apply common-btn bg-white border border-gray-800 text-gray-800;
+  }
+
   .nav-style {
     @apply flex justify-end items-start basis-auto flex-grow-0;
   }
