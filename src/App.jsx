@@ -1,3 +1,13 @@
+import HeroSection from "./components/pages/HeroSection";
+import Layout from "./components/templates/Layout";
+
 export default function App() {
-  return <div className="bg-red-100">Hello, React!</div>;
+  return (
+    <Layout>
+      <HeroSection />
+      <section className="min-h-[900px]">
+        s<button>sdf</button>s
+      </section>
+    </Layout>
+  );
 }
