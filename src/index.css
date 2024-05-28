@@ -154,9 +154,8 @@ img {
     height: 5vw;
     max-height: 62px;
   }
-
   .digits-section {
-    @apply relative mt-[-75px] py-0 px-[6.25%];
+    @apply relative mt-[-75px] py-[12.5%] px-[20px] xl:pt-0 xl:px-[6.25%] xl:pb-[6.25%];
   }
   .digits-container {
     @apply flex bg-white rounded-tr-[160px] rounded-bl-[160px] py-[100px] px-[5vw] justify-between;
@@ -165,5 +164,45 @@ img {
 
   .digits-item-desc {
     @apply leading-[19px];
+  }
+
+  .network:nth-of-type(2) {
+    @apply mt-10;
+  }
+
+  .partner-col-first {
+    height: 1930px;
+    overflow: visible;
+    box-sizing: border-box;
+    position: absolute;
+    width: 525px;
+    height: 1930px;
+    padding: 0px 0px 1262px;
+    z-index: auto;
+    float: none;
+    flex-shrink: 1;
+    display: block;
+    margin: 0px;
+    inset: 0px 0px 1261.88px;
+  }
+
+  .partner-col-text {
+    translate: none;
+    rotate: none;
+    scale: none;
+    left: 94.5px;
+    top: 159.5px;
+    margin: 0px;
+    max-width: 525px;
+    width: 525px;
+    max-height: 668px;
+    height: 668px;
+    padding: 0px 0px 0px 115px;
+    box-sizing: border-box;
+    transform: translate(0px, 0px);
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: -2px;
+    line-height: 60px;
   }
 }
