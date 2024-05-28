@@ -123,4 +123,30 @@ img {
     container-type: size;
   }
 
+  .hero-text {
+    padding: 208px 6.25%;
+  }
+  .hero-text > h1 {
+    font-size: 5.75vw;
+    line-height: 6.4vw;
+    min-height: 400px;
+    padding-top: 54px;
+    letter-spacing: -3.89px;
+    width: 100%;
+    max-width: 720px;
+  }
+
+  .hero-text .text-outline {
+    font-size: 83px;
+    letter-spacing: 0;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    line-height: 92px;
+  }
+
+  .hero-text .cursor {
+    @apply inline-block w-1 ml-2 bg-white animate-pulsate;
+    height: 5vw;
+    max-height: 62px;
+  }
 }
